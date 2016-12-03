@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var listType: UIImageView!
+    @IBOutlet weak var listTypeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //修改navigationController背景颜色
+//        let bgColor = UIColor(red: 0, green:225, blue: 255, alpha: 1)
+//        self.navigationController?.navigationBar.barTintColor = bgColor
+        self.navigationController?.navigationBar.backgroundColor = UIColor.red
+        
     }
 
     override func didReceiveMemoryWarning() {
