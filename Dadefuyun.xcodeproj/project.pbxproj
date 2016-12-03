@@ -16,6 +16,10 @@
 		D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */; };
 		D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */; };
 		D8E43E7E1DEC52C100BE277F /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E43E7D1DEC52C100BE277F /* InterestCollectionViewCell.swift */; };
+		D8E9CBD81DF267F600012EEF /* InterestOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBD71DF267F600012EEF /* InterestOpenViewController.swift */; };
+		D8E9CBE31DF28B9500012EEF /* OpenAmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE11DF28B9500012EEF /* OpenAmi.swift */; };
+		D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE21DF28B9500012EEF /* QCMethod.swift */; };
+		D8E9CBE71DF2B91800012EEF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestDetailViewController.swift; sourceTree = "<group>"; };
 		D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		D8E43E7D1DEC52C100BE277F /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8E9CBD71DF267F600012EEF /* InterestOpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestOpenViewController.swift; sourceTree = "<group>"; };
+		D8E9CBE11DF28B9500012EEF /* OpenAmi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAmi.swift; sourceTree = "<group>"; };
+		D8E9CBE21DF28B9500012EEF /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
+		D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 				D8E43E781DEC4CA600BE277F /* Carousel */,
 				D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */,
 				D84DCFE71DEAD6CD007C0625 /* Main.storyboard */,
+				D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */,
 				D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */,
 				D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */,
 				D84DCFEF1DEAD6CD007C0625 /* Info.plist */,
@@ -77,6 +86,7 @@
 		D8C0B9B01DEDB96C00D1B3F4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D8E9CBE51DF28BF300012EEF /* Animation */,
 				D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */,
 			);
 			name = SupportingFiles;
@@ -88,6 +98,7 @@
 				D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */,
 				D8E43E7D1DEC52C100BE277F /* InterestCollectionViewCell.swift */,
 				D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */,
+				D8E9CBD71DF267F600012EEF /* InterestOpenViewController.swift */,
 			);
 			name = Carousel;
 			sourceTree = "<group>";
@@ -98,6 +109,15 @@
 				D84DCFF91DEADD97007C0625 /* LingfuModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D8E9CBE51DF28BF300012EEF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9CBE11DF28B9500012EEF /* OpenAmi.swift */,
+				D8E9CBE21DF28B9500012EEF /* QCMethod.swift */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +195,13 @@
 			files = (
 				D8E43E7E1DEC52C100BE277F /* InterestCollectionViewCell.swift in Sources */,
 				D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */,
+				D8E9CBD81DF267F600012EEF /* InterestOpenViewController.swift in Sources */,
+				D8E9CBE71DF2B91800012EEF /* MoneyViewController.swift in Sources */,
 				D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */,
 				D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */,
 				D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */,
+				D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */,
+				D8E9CBE31DF28B9500012EEF /* OpenAmi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

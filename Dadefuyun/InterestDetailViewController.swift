@@ -11,7 +11,10 @@ import AVFoundation
 
 class InterestDetailViewController: UIViewController {
 
+    @IBOutlet weak var openAmiView: OpenAmi!
     var lingfu: LingfuModel?
+    let showImageWidth = UIScreen.main.bounds.size.width
+    let showImageHeight = UIScreen.main.bounds.size.height
     @IBOutlet weak var lingfuImage3: UIImageView!
     
     // MARK: - 背景音乐控件
@@ -37,13 +40,33 @@ class InterestDetailViewController: UIViewController {
 
         
         self.title = lingfu?.name
+        
+        
         //lingfuImage3.image = UIImage(named: (lingfu?.image)!)
         let getImage = UIImage(named: (lingfu?.image)!)
-        let showImageWidth = UIScreen.main.bounds.size.width
-        let showImageHeight = UIScreen.main.bounds.size.height
         lingfuImage3.image = cropToBounds(image: getImage!, width: Double(showImageWidth), height: Double(showImageHeight))
         
+        if lingfu?.id != "0" { //已经开通的客户直接显示灵符，这里暂时用灵符id代替一下
+            
         
+        //}else { //没开通的客户显示动画
+            
+            // MARK: - QuartzCode做的动画，需要先添加一个UIView，然后绑定类
+            openAmiView.addOldAnimation()
+            //openAmiView.removeFromSuperview()
+            
+            // MARK: - 长按手势打开
+            let longPress = UILongPressGestureRecognizer.init(target: self, action: #selector(QRLongPress(gesture:)))
+            longPress.minimumPressDuration = 1
+            self.view.addGestureRecognizer(longPress)
+
+            
+            
+            
+            
+            
+            
+        }
         
         // MARK: - 播放背景音乐
 //        let path = Bundle.main.url(forResource: "bgm", withExtension: "mp3")
@@ -80,6 +103,38 @@ class InterestDetailViewController: UIViewController {
     }
     
     
+    
+    
+    //MARK: - 长按二维码识别
+    func QRLongPress(gesture: UILongPressGestureRecognizer) {
+        
+        if (gesture.state == UIGestureRecognizerState.began) {
+            
+            UIView.animate(withDuration: 2.0, delay: 1, options: [.curveEaseInOut], animations: {
+                
+                self.openAmiView.layer.position.y -= self.showImageHeight
+                //self.openAmiView.layer.opacity = 0
+                
+                
+            }, completion: {
+                (finished:Bool) -> Void in
+                UIView.animate(withDuration: 1, animations:{
+                ()-> Void in
+                    //完成动画时，数字块复原
+                    self.openAmiView.removeFromSuperview()
+//                    let getImage = UIImage(named: (self.lingfu?.image)!)
+//                    self.lingfuImage3.image = self.cropToBounds(image: getImage!, width: Double(self.showImageWidth), height: Double(self.showImageHeight))
+                })
+            })
+            
+                
+            
+            
+        } else if (gesture.state == UIGestureRecognizerState.ended) {
+            //openAmiView.removeFromSuperview()
+            
+        }
+    }
     
     
     // MARK: - 背景音乐按钮旋转动画
