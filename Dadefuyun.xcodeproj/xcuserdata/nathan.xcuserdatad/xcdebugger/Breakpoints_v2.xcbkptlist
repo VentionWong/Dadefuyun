@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dadefuyun/InterestDetailViewController.swift"
-            timestampString = "502446983.269169"
+            timestampString = "502475925.366078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "cropToBounds(image:width:height:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dadefuyun/InterestDetailViewController.swift"
-            timestampString = "502446983.269169"
+            timestampString = "502475925.366078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "cropToBounds(image:width:height:)"
             landmarkType = "7">
          </BreakpointContent>

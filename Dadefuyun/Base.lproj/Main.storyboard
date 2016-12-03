@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,19 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="9el-yG-vOi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="9el-yG-vOi">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LF9-cn-LXE">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF9-cn-LXE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ueY-9U-s5w">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ueY-9U-s5w">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-us-a5e">
-                                            <rect key="frame" x="0.0" y="87" width="375" height="502"/>
+                                            <rect key="frame" x="0.0" y="87" width="602" height="502"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="eXg-Zr-Bej">
@@ -50,30 +49,45 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" tag="301" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-bK-cvu">
+                                                            <imageView userInteractionEnabled="NO" tag="301" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-bK-cvu">
                                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
-                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-5c-obG">
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-5c-obG">
                                                                 <rect key="frame" x="0.0" y="353" width="250" height="47"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ALg-Pr-PaC">
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ALg-Pr-PaC">
                                                                     <rect key="frame" x="0.0" y="0.0" width="250" height="47"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="302" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="五鬼运财符" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHk-5f-cxH">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="302" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五鬼运财符" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHk-5f-cxH">
                                                                             <rect key="frame" x="8" y="8" width="234" height="31"/>
-                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="hHk-5f-cxH" firstAttribute="leading" secondItem="ALg-Pr-PaC" secondAttribute="leadingMargin" id="0PI-0G-c6J"/>
+                                                                        <constraint firstItem="hHk-5f-cxH" firstAttribute="trailing" secondItem="ALg-Pr-PaC" secondAttribute="trailingMargin" id="2aI-wQ-3iR"/>
+                                                                        <constraint firstItem="hHk-5f-cxH" firstAttribute="bottom" secondItem="ALg-Pr-PaC" secondAttribute="bottomMargin" id="Sfs-nv-iUA"/>
+                                                                        <constraint firstItem="hHk-5f-cxH" firstAttribute="top" secondItem="ALg-Pr-PaC" secondAttribute="topMargin" id="be3-Sb-Tkj"/>
+                                                                    </constraints>
                                                                 </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="47" id="Y7p-uP-3zp"/>
+                                                                </constraints>
                                                                 <blurEffect style="light"/>
                                                             </visualEffectView>
                                                         </subviews>
                                                     </view>
+                                                    <constraints>
+                                                        <constraint firstItem="rr2-bK-cvu" firstAttribute="leading" secondItem="iGO-Ur-1FW" secondAttribute="leading" id="07u-KL-Y98"/>
+                                                        <constraint firstItem="rr2-bK-cvu" firstAttribute="trailing" secondItem="pyd-5c-obG" secondAttribute="trailing" id="9Vj-pE-vZe"/>
+                                                        <constraint firstItem="rr2-bK-cvu" firstAttribute="leading" secondItem="pyd-5c-obG" secondAttribute="leading" id="P1i-SP-FCo"/>
+                                                        <constraint firstItem="rr2-bK-cvu" firstAttribute="top" secondItem="iGO-Ur-1FW" secondAttribute="top" id="QDo-I7-5yr"/>
+                                                        <constraint firstItem="rr2-bK-cvu" firstAttribute="bottom" secondItem="pyd-5c-obG" secondAttribute="bottom" id="YQr-qv-pMp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rr2-bK-cvu" secondAttribute="trailing" id="bti-G7-TKQ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rr2-bK-cvu" secondAttribute="bottom" id="twG-gZ-plo"/>
+                                                    </constraints>
                                                     <connections>
                                                         <outlet property="featuredImageView" destination="rr2-bK-cvu" id="sLQ-Zu-LPk"/>
                                                         <outlet property="interestTitleLabel" destination="hHk-5f-cxH" id="FVv-2w-yJt"/>
@@ -90,6 +104,16 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="LF9-cn-LXE" firstAttribute="width" secondItem="9el-yG-vOi" secondAttribute="width" id="Hqt-Xs-uLC"/>
+                            <constraint firstItem="9el-yG-vOi" firstAttribute="top" secondItem="W3w-ZR-1B3" secondAttribute="top" id="OOe-XB-YJs"/>
+                            <constraint firstItem="LF9-cn-LXE" firstAttribute="height" secondItem="9el-yG-vOi" secondAttribute="height" id="P5w-CM-XFf"/>
+                            <constraint firstItem="9el-yG-vOi" firstAttribute="leading" secondItem="W3w-ZR-1B3" secondAttribute="leading" id="Pk7-do-b8b"/>
+                            <constraint firstItem="LF9-cn-LXE" firstAttribute="top" secondItem="9el-yG-vOi" secondAttribute="top" id="TqU-0e-cHX"/>
+                            <constraint firstAttribute="trailing" secondItem="9el-yG-vOi" secondAttribute="trailing" id="UUu-la-AoS"/>
+                            <constraint firstItem="LF9-cn-LXE" firstAttribute="leading" secondItem="9el-yG-vOi" secondAttribute="leading" id="jhb-HW-68G"/>
+                            <constraint firstItem="AFj-Ty-mve" firstAttribute="top" secondItem="9el-yG-vOi" secondAttribute="bottom" id="ld0-99-cdf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="上品灵符" id="eJV-Zv-A3C"/>
                     <connections>
@@ -99,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iaf-By-bHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="2277"/>
+            <point key="canvasLocation" x="869.60000000000002" y="2274.5127436281859"/>
         </scene>
         <!--Interest Open View Controller-->
         <scene sceneID="tZG-rk-RgW">
@@ -250,7 +274,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="01u-L3-K5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="2276"/>
+            <point key="canvasLocation" x="142" y="2274"/>
         </scene>
     </scenes>
     <resources>

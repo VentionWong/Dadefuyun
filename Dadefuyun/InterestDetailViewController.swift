@@ -102,6 +102,15 @@ class InterestDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        //判断用户是否已经开启灵符
+        
+        
+        
+        
+        
+    }
+    
     
     
     

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-
+        Bmob.register(withAppKey: "0e5e1fa78c7c543157647cfa2b26e459")
         
         return true
     }

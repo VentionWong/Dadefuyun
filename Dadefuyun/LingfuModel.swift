@@ -31,8 +31,42 @@ class  LingfuModel: NSObject {
                 LingfuModel(id: "1", name: "2鬼运财符", image: "2", price: 298),
                 LingfuModel(id: "1", name: "3鬼运财符", image: "3", price: 398),
                 LingfuModel(id: "1", name: "4鬼运财符", image: "dd_fu_4", price: 498),
-                LingfuModel(id: "1", name: "五鬼运财符", image: "dd_fu_5", price: 598),]
+                LingfuModel(id: "1", name: "五鬼运财符", image: "dd_fu_5", price: 598),
+                LingfuModel(id: "1", name: "1鬼运财符", image: "1", price: 198),
+                LingfuModel(id: "1", name: "2鬼运财符", image: "2", price: 298),
+                LingfuModel(id: "1", name: "3鬼运财符", image: "3", price: 398),
+                LingfuModel(id: "1", name: "4鬼运财符", image: "dd_fu_4", price: 498),
+                LingfuModel(id: "1", name: "五鬼运财符", image: "dd_fu_5", price: 598),
+                LingfuModel(id: "1", name: "1鬼运财符", image: "1", price: 198),
+                LingfuModel(id: "1", name: "2鬼运财符", image: "2", price: 298),
+                LingfuModel(id: "1", name: "3鬼运财符", image: "3", price: 398),
+                LingfuModel(id: "1", name: "4鬼运财符", image: "dd_fu_4", price: 498),
+                LingfuModel(id: "1", name: "五鬼运财符", image: "dd_fu_5", price: 598)]
     }
+    
+//    static func createInterests2() -> [LingfuModel]
+//    {
+//        
+//        let query:BmobQuery = BmobQuery(className: "Lingfu")
+//        query.order(byDescending: "createdAt")
+//        query.findObjectsInBackground { (array, error) in
+//            if let theCount = array?.count {
+//                for i in 0..<theCount{
+//                    
+//                    let obj :BmobObject = (array![i] as? BmobObject)!
+//                    print("object id \(obj.objectId)")
+//                    
+//                }
+//            }
+//        }
+//        
+//        
+//        return [LingfuModel(id: "1", name: "1鬼运财符", image: "1", price: 198),
+//                LingfuModel(id: "1", name: "2鬼运财符", image: "2", price: 298),
+//                LingfuModel(id: "1", name: "3鬼运财符", image: "3", price: 398),
+//                LingfuModel(id: "1", name: "4鬼运财符", image: "dd_fu_4", price: 498),
+//                LingfuModel(id: "1", name: "五鬼运财符", image: "dd_fu_5", price: 598),]
+//    }
     
     
     

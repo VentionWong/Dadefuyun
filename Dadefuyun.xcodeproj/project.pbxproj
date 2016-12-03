@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED184F6F2BE597F3A1E5F13 /* Pods_Dadefuyun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C54C1CB717E729626273997 /* Pods_Dadefuyun.framework */; };
 		D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */; };
 		D84DCFE91DEAD6CD007C0625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFE71DEAD6CD007C0625 /* Main.storyboard */; };
 		D84DCFEB1DEAD6CD007C0625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */; };
@@ -20,9 +21,14 @@
 		D8E9CBE31DF28B9500012EEF /* OpenAmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE11DF28B9500012EEF /* OpenAmi.swift */; };
 		D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE21DF28B9500012EEF /* QCMethod.swift */; };
 		D8E9CBE71DF2B91800012EEF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */; };
+		D8E9CC0B1DF2F4C900012EEF /* Dadefuyun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CC091DF2F4C900012EEF /* Dadefuyun.xcdatamodeld */; };
+		D8E9CC111DF304CC00012EEF /* BombData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CC101DF304CC00012EEF /* BombData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6BBC36F6F1F95E5C43D381 /* Pods-Dadefuyun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dadefuyun.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dadefuyun/Pods-Dadefuyun.release.xcconfig"; sourceTree = "<group>"; };
+		219B217B49784524B8747244 /* Pods-Dadefuyun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dadefuyun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dadefuyun/Pods-Dadefuyun.debug.xcconfig"; sourceTree = "<group>"; };
+		3C54C1CB717E729626273997 /* Pods_Dadefuyun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dadefuyun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84DCFE01DEAD6CD007C0625 /* Dadefuyun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dadefuyun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D84DCFE81DEAD6CD007C0625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +44,9 @@
 		D8E9CBE11DF28B9500012EEF /* OpenAmi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAmi.swift; sourceTree = "<group>"; };
 		D8E9CBE21DF28B9500012EEF /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
 		D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		D8E9CC0A1DF2F4C900012EEF /* Dadefuyun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dadefuyun.xcdatamodel; sourceTree = "<group>"; };
+		D8E9CC0D1DF2FE0000012EEF /* Dadefuyun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dadefuyun-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8E9CC101DF304CC00012EEF /* BombData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED184F6F2BE597F3A1E5F13 /* Pods_Dadefuyun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EABEA2B75BD36001B95D417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				219B217B49784524B8747244 /* Pods-Dadefuyun.debug.xcconfig */,
+				1A6BBC36F6F1F95E5C43D381 /* Pods-Dadefuyun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACB516B7D4666A9DA8C97CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C54C1CB717E729626273997 /* Pods_Dadefuyun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D84DCFD71DEAD6CD007C0625 = {
 			isa = PBXGroup;
 			children = (
 				D84DCFE21DEAD6CD007C0625 /* Dadefuyun */,
 				D84DCFE11DEAD6CD007C0625 /* Products */,
+				8EABEA2B75BD36001B95D417 /* Pods */,
+				ACB516B7D4666A9DA8C97CB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +108,8 @@
 				D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */,
 				D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */,
 				D84DCFEF1DEAD6CD007C0625 /* Info.plist */,
+				D8E9CC091DF2F4C900012EEF /* Dadefuyun.xcdatamodeld */,
+				D8E9CC0D1DF2FE0000012EEF /* Dadefuyun-Bridging-Header.h */,
 			);
 			path = Dadefuyun;
 			sourceTree = "<group>";
@@ -86,6 +117,7 @@
 		D8C0B9B01DEDB96C00D1B3F4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D8E9CC101DF304CC00012EEF /* BombData.swift */,
 				D8E9CBE51DF28BF300012EEF /* Animation */,
 				D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */,
 			);
@@ -127,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D84DCFF21DEAD6CD007C0625 /* Build configuration list for PBXNativeTarget "Dadefuyun" */;
 			buildPhases = (
+				E932AD1AF57371D20A3B4DBC /* [CP] Check Pods Manifest.lock */,
 				D84DCFDC1DEAD6CD007C0625 /* Sources */,
 				D84DCFDD1DEAD6CD007C0625 /* Frameworks */,
 				D84DCFDE1DEAD6CD007C0625 /* Resources */,
+				EF4A439C56EFE3F1382EA5D9 /* [CP] Embed Pods Frameworks */,
+				65AF81A3C01040A133DA0881 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +187,7 @@
 				TargetAttributes = {
 					D84DCFDF1DEAD6CD007C0625 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -188,11 +224,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65AF81A3C01040A133DA0881 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dadefuyun/Pods-Dadefuyun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E932AD1AF57371D20A3B4DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4A439C56EFE3F1382EA5D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dadefuyun/Pods-Dadefuyun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D84DCFDC1DEAD6CD007C0625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E9CC111DF304CC00012EEF /* BombData.swift in Sources */,
 				D8E43E7E1DEC52C100BE277F /* InterestCollectionViewCell.swift in Sources */,
 				D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */,
 				D8E9CBD81DF267F600012EEF /* InterestOpenViewController.swift in Sources */,
@@ -200,6 +285,7 @@
 				D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */,
 				D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */,
 				D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */,
+				D8E9CC0B1DF2F4C900012EEF /* Dadefuyun.xcdatamodeld in Sources */,
 				D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */,
 				D8E9CBE31DF28B9500012EEF /* OpenAmi.swift in Sources */,
 			);
@@ -320,24 +406,31 @@
 		};
 		D84DCFF31DEAD6CD007C0625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219B217B49784524B8747244 /* Pods-Dadefuyun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dadefuyun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.Dadefuyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dadefuyun/Dadefuyun-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D84DCFF41DEAD6CD007C0625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6BBC36F6F1F95E5C43D381 /* Pods-Dadefuyun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dadefuyun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathan.Dadefuyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dadefuyun/Dadefuyun-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -364,6 +457,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8E9CC091DF2F4C900012EEF /* Dadefuyun.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8E9CC0A1DF2F4C900012EEF /* Dadefuyun.xcdatamodel */,
+			);
+			currentVersion = D8E9CC0A1DF2F4C900012EEF /* Dadefuyun.xcdatamodel */;
+			path = Dadefuyun.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D84DCFD81DEAD6CD007C0625 /* Project object */;
 }

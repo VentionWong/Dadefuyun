@@ -18,6 +18,11 @@ class InterestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // MARK: - 判断用户UUID是否已经录入，如果没有则录入
+        BombData().queryUsersOrCreate()
+        
+        
         //播放启动画面动画
         launchAnimation()
         
@@ -53,6 +58,11 @@ class InterestViewController: UIViewController {
     }
     */
     
+    
+    
+    
+    
+        
     
     
     //播放启动画面动画
