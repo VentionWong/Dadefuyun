@@ -8,17 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */; };
-		D84DCFE61DEAD6CD007C0625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFE51DEAD6CD007C0625 /* ViewController.swift */; };
 		D84DCFE91DEAD6CD007C0625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFE71DEAD6CD007C0625 /* Main.storyboard */; };
 		D84DCFEB1DEAD6CD007C0625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */; };
 		D84DCFEE1DEAD6CD007C0625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */; };
 		D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFF91DEADD97007C0625 /* LingfuModel.swift */; };
-		D84DCFFC1DEAE1B9007C0625 /* LingfuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFFB1DEAE1B9007C0625 /* LingfuTableViewController.swift */; };
-		D84DCFFE1DEAFBB3007C0625 /* LingfuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFFD1DEAFBB3007C0625 /* LingfuDetailViewController.swift */; };
-		D84DD0021DEB0E1D007C0625 /* LingfuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DD0001DEB0E1D007C0625 /* LingfuTableViewCell.swift */; };
-		D84DD0031DEB0E1D007C0625 /* LingfuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84DD0011DEB0E1D007C0625 /* LingfuTableViewCell.xib */; };
-		D84DD0051DEB11CD007C0625 /* LFNibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DD0041DEB11CD007C0625 /* LFNibTableViewController.swift */; };
-		D84DD0071DEB1DDF007C0625 /* LFNibDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DD0061DEB1DDF007C0625 /* LFNibDetailViewController.swift */; };
 		D8C0B9B21DEDBB5500D1B3F4 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */; };
 		D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */; };
 		D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */; };
@@ -28,18 +21,11 @@
 /* Begin PBXFileReference section */
 		D84DCFE01DEAD6CD007C0625 /* Dadefuyun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dadefuyun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D84DCFE51DEAD6CD007C0625 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D84DCFE81DEAD6CD007C0625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84DCFED1DEAD6CD007C0625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84DCFEF1DEAD6CD007C0625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84DCFF91DEADD97007C0625 /* LingfuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LingfuModel.swift; sourceTree = "<group>"; };
-		D84DCFFB1DEAE1B9007C0625 /* LingfuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LingfuTableViewController.swift; sourceTree = "<group>"; };
-		D84DCFFD1DEAFBB3007C0625 /* LingfuDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LingfuDetailViewController.swift; sourceTree = "<group>"; };
-		D84DD0001DEB0E1D007C0625 /* LingfuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LingfuTableViewCell.swift; sourceTree = "<group>"; };
-		D84DD0011DEB0E1D007C0625 /* LingfuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LingfuTableViewCell.xib; sourceTree = "<group>"; };
-		D84DD0041DEB11CD007C0625 /* LFNibTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFNibTableViewController.swift; sourceTree = "<group>"; };
-		D84DD0061DEB1DDF007C0625 /* LFNibDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFNibDetailViewController.swift; sourceTree = "<group>"; };
 		D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestDetailViewController.swift; sourceTree = "<group>"; };
 		D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
@@ -76,31 +62,16 @@
 		D84DCFE21DEAD6CD007C0625 /* Dadefuyun */ = {
 			isa = PBXGroup;
 			children = (
+				D8E9CBD61DF265ED00012EEF /* Models */,
 				D8C0B9B01DEDB96C00D1B3F4 /* SupportingFiles */,
 				D8E43E781DEC4CA600BE277F /* Carousel */,
 				D84DCFE31DEAD6CD007C0625 /* AppDelegate.swift */,
-				D84DCFE51DEAD6CD007C0625 /* ViewController.swift */,
-				D84DCFFB1DEAE1B9007C0625 /* LingfuTableViewController.swift */,
-				D84DCFFD1DEAFBB3007C0625 /* LingfuDetailViewController.swift */,
-				D84DCFFF1DEB0DDC007C0625 /* Cell */,
 				D84DCFE71DEAD6CD007C0625 /* Main.storyboard */,
-				D84DCFF91DEADD97007C0625 /* LingfuModel.swift */,
 				D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */,
 				D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */,
 				D84DCFEF1DEAD6CD007C0625 /* Info.plist */,
 			);
 			path = Dadefuyun;
-			sourceTree = "<group>";
-		};
-		D84DCFFF1DEB0DDC007C0625 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				D84DD0001DEB0E1D007C0625 /* LingfuTableViewCell.swift */,
-				D84DD0011DEB0E1D007C0625 /* LingfuTableViewCell.xib */,
-				D84DD0041DEB11CD007C0625 /* LFNibTableViewController.swift */,
-				D84DD0061DEB1DDF007C0625 /* LFNibDetailViewController.swift */,
-			);
-			name = Cell;
 			sourceTree = "<group>";
 		};
 		D8C0B9B01DEDB96C00D1B3F4 /* SupportingFiles */ = {
@@ -119,6 +90,14 @@
 				D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */,
 			);
 			name = Carousel;
+			sourceTree = "<group>";
+		};
+		D8E9CBD61DF265ED00012EEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D84DCFF91DEADD97007C0625 /* LingfuModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +159,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84DD0031DEB0E1D007C0625 /* LingfuTableViewCell.xib in Resources */,
 				D84DCFEE1DEAD6CD007C0625 /* LaunchScreen.storyboard in Resources */,
 				D84DCFEB1DEAD6CD007C0625 /* Assets.xcassets in Resources */,
 				D84DCFE91DEAD6CD007C0625 /* Main.storyboard in Resources */,
@@ -196,15 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E43E7E1DEC52C100BE277F /* InterestCollectionViewCell.swift in Sources */,
-				D84DD0021DEB0E1D007C0625 /* LingfuTableViewCell.swift in Sources */,
 				D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */,
-				D84DCFE61DEAD6CD007C0625 /* ViewController.swift in Sources */,
 				D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */,
-				D84DD0051DEB11CD007C0625 /* LFNibTableViewController.swift in Sources */,
-				D84DCFFC1DEAE1B9007C0625 /* LingfuTableViewController.swift in Sources */,
 				D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */,
-				D84DCFFE1DEAFBB3007C0625 /* LingfuDetailViewController.swift in Sources */,
-				D84DD0071DEB1DDF007C0625 /* LFNibDetailViewController.swift in Sources */,
 				D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
