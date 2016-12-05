@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
@@ -18,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CAAnimationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Bmob.register(withAppKey: "0e5e1fa78c7c543157647cfa2b26e459")
+        LeanCloud.initialize(applicationID: "2b1qUxHVBqXeHklwYiG0uodz-gzGzoHsz", applicationKey: "6R7TJ6r4WVODKpcsjEciFfDr")
+        //LeanCloud.setAllLogsEnabled(true)
+        //LeanCloud.setAllLogsEnabled = true
         
         return true
     }

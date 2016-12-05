@@ -6,6 +6,6 @@ target 'Dadefuyun' do
   use_frameworks!
 
   # Pods for Dadefuyun
-  pod 'BmobSDK'
-
+  pod 'LeanCloud'
+  
 end

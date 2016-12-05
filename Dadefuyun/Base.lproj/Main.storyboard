@@ -31,9 +31,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-us-a5e">
-                                            <rect key="frame" x="0.0" y="87" width="602" height="502"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-us-a5e">
+                                            <rect key="frame" x="0.0" y="87" width="375" height="502"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="eXg-Zr-Bej">
                                                 <size key="itemSize" width="250" height="400"/>
@@ -100,6 +99,12 @@
                                             </connections>
                                         </collectionView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uwt-us-a5e" secondAttribute="bottom" constant="78" id="AOo-m2-A5m"/>
+                                        <constraint firstAttribute="trailing" secondItem="uwt-us-a5e" secondAttribute="trailing" id="O7m-LP-94F"/>
+                                        <constraint firstItem="uwt-us-a5e" firstAttribute="top" secondItem="ueY-9U-s5w" secondAttribute="top" constant="87" id="Wva-QX-PV0"/>
+                                        <constraint firstItem="uwt-us-a5e" firstAttribute="leading" secondItem="ueY-9U-s5w" secondAttribute="leading" id="Ya1-GC-CJO"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>

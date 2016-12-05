@@ -69,12 +69,12 @@ class InterestDetailViewController: UIViewController {
         }
         
         // MARK: - 播放背景音乐
-//        let path = Bundle.main.url(forResource: "bgm", withExtension: "mp3")
-//        aPlayer = try! AVAudioPlayer(contentsOf: path!, fileTypeHint: "AVFileTypeMPEGLayer3")
-//        aPlayer.numberOfLoops = -1
-//        aPlayer.prepareToPlay()
-//        aPlayer.play()
-//        rotateMusicButton()
+        let path = Bundle.main.url(forResource: "bgm", withExtension: "mp3")
+        aPlayer = try! AVAudioPlayer(contentsOf: path!, fileTypeHint: "AVFileTypeMPEGLayer3")
+        aPlayer.numberOfLoops = -1
+        aPlayer.prepareToPlay()
+        aPlayer.play()
+        rotateMusicButton()
         
         
         
@@ -85,7 +85,7 @@ class InterestDetailViewController: UIViewController {
         
         
         
-//        //将导航栏设置成透明   子页目前没成功
+//        //将导航栏设置成透明   
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 //        self.navigationController!.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.isTranslucent = true
@@ -105,8 +105,10 @@ class InterestDetailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         //判断用户是否已经开启灵符
         
-        
-        
+        let username = UIDevice.current.identifierForVendor?.uuidString  //获取设备唯一标识符 例如：FBF2306E-A0D8-4F4B-BDED-9333B627D3E6
+//        BombData().queryUserLingfu(username: username!, LingfuID: (lingfu?.id)!)
+//        print(username!)
+//        print((lingfu?.id)!)
         
         
     }
@@ -181,11 +183,11 @@ class InterestDetailViewController: UIViewController {
     func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
         
         var contextImage: UIImage = UIImage(cgImage: image.cgImage!)
-        var contextSize: CGSize = contextImage.size
+        let contextSize: CGSize = contextImage.size
         var posX: CGFloat = 0.0
         var posY: CGFloat = 0.0
-        var cgwidth: CGFloat = CGFloat(width)
-        var cgheight: CGFloat = CGFloat(height)
+        let cgwidth: CGFloat = CGFloat(width)
+        let cgheight: CGFloat = CGFloat(height)
         
         // See what size is longer and create the center off of that
         if contextSize.width > contextSize.height {

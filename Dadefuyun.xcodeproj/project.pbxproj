@@ -13,6 +13,7 @@
 		D84DCFEB1DEAD6CD007C0625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFEA1DEAD6CD007C0625 /* Assets.xcassets */; };
 		D84DCFEE1DEAD6CD007C0625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */; };
 		D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DCFF91DEADD97007C0625 /* LingfuModel.swift */; };
+		D8AE31AE1DF43BAD00D8C2BA /* LeanCloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE31AD1DF43BAD00D8C2BA /* LeanCloudData.swift */; };
 		D8C0B9B21DEDBB5500D1B3F4 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */; };
 		D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */; };
 		D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */; };
@@ -22,7 +23,6 @@
 		D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE21DF28B9500012EEF /* QCMethod.swift */; };
 		D8E9CBE71DF2B91800012EEF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */; };
 		D8E9CC0B1DF2F4C900012EEF /* Dadefuyun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CC091DF2F4C900012EEF /* Dadefuyun.xcdatamodeld */; };
-		D8E9CC111DF304CC00012EEF /* BombData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9CC101DF304CC00012EEF /* BombData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +36,8 @@
 		D84DCFED1DEAD6CD007C0625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84DCFEF1DEAD6CD007C0625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84DCFF91DEADD97007C0625 /* LingfuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LingfuModel.swift; sourceTree = "<group>"; };
+		D88A07881DF5B51E00A5650E /* Dadefuyun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dadefuyun-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8AE31AD1DF43BAD00D8C2BA /* LeanCloudData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeanCloudData.swift; sourceTree = "<group>"; };
 		D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		D8C7966F1DEC61B400AFBC57 /* InterestDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestDetailViewController.swift; sourceTree = "<group>"; };
 		D8E43E7B1DEC52A300BE277F /* InterestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		D8E9CBE21DF28B9500012EEF /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
 		D8E9CBE61DF2B91800012EEF /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		D8E9CC0A1DF2F4C900012EEF /* Dadefuyun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dadefuyun.xcdatamodel; sourceTree = "<group>"; };
-		D8E9CC0D1DF2FE0000012EEF /* Dadefuyun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dadefuyun-Bridging-Header.h"; sourceTree = "<group>"; };
-		D8E9CC101DF304CC00012EEF /* BombData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				D84DCFEC1DEAD6CD007C0625 /* LaunchScreen.storyboard */,
 				D84DCFEF1DEAD6CD007C0625 /* Info.plist */,
 				D8E9CC091DF2F4C900012EEF /* Dadefuyun.xcdatamodeld */,
-				D8E9CC0D1DF2FE0000012EEF /* Dadefuyun-Bridging-Header.h */,
+				D88A07881DF5B51E00A5650E /* Dadefuyun-Bridging-Header.h */,
 			);
 			path = Dadefuyun;
 			sourceTree = "<group>";
@@ -117,9 +117,9 @@
 		D8C0B9B01DEDB96C00D1B3F4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D8E9CC101DF304CC00012EEF /* BombData.swift */,
 				D8E9CBE51DF28BF300012EEF /* Animation */,
 				D8C0B9B11DEDBB5500D1B3F4 /* bgm.mp3 */,
+				D8AE31AD1DF43BAD00D8C2BA /* LeanCloudData.swift */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -277,13 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E9CC111DF304CC00012EEF /* BombData.swift in Sources */,
 				D8E43E7E1DEC52C100BE277F /* InterestCollectionViewCell.swift in Sources */,
 				D8E43E7C1DEC52A300BE277F /* InterestViewController.swift in Sources */,
 				D8E9CBD81DF267F600012EEF /* InterestOpenViewController.swift in Sources */,
 				D8E9CBE71DF2B91800012EEF /* MoneyViewController.swift in Sources */,
 				D84DCFE41DEAD6CD007C0625 /* AppDelegate.swift in Sources */,
 				D84DCFFA1DEADD97007C0625 /* LingfuModel.swift in Sources */,
+				D8AE31AE1DF43BAD00D8C2BA /* LeanCloudData.swift in Sources */,
 				D8C796701DEC61B400AFBC57 /* InterestDetailViewController.swift in Sources */,
 				D8E9CC0B1DF2F4C900012EEF /* Dadefuyun.xcdatamodeld in Sources */,
 				D8E9CBE41DF28B9500012EEF /* QCMethod.swift in Sources */,
@@ -331,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -358,6 +359,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -380,6 +382,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -399,6 +402,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -408,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 219B217B49784524B8747244 /* Pods-Dadefuyun.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dadefuyun/Info.plist;
@@ -424,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A6BBC36F6F1F95E5C43D381 /* Pods-Dadefuyun.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dadefuyun/Info.plist;

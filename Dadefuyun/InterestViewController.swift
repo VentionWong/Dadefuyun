@@ -7,20 +7,38 @@
 //
 
 import UIKit
+import LeanCloud
+
+//放在class外面才能用，不然就出错，奇怪～～～～～～～
+fileprivate var interests = LingfuModel.createInterests2()
 
 class InterestViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate var interests = LingfuModel.createInterests()
+    //fileprivate var interests = LingfuModel.createInterests()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         // MARK: - 判断用户UUID是否已经录入，如果没有则录入
-        BombData().queryUsersOrCreate()
+        let UUID = UIDevice.current.identifierForVendor?.uuidString  //获取设备唯一标识符 例如：FBF2306E-A0D8-4F4B-BDED-9333B627D3E6
+        LCUser.logIn(username: UUID!, password: "123456") { result in
+            switch result {
+            case .success(let user):
+                print(user)
+                break
+            case .failure(let error):
+                print(error)
+                
+                LeanCloudData().saveUser(username: UUID!)
+            }
+        }
+        
+        //print(LeanCloudData().createInterests2()[1].name)
+        //print(interests2)
         
         
         //播放启动画面动画
@@ -111,7 +129,7 @@ extension InterestViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath) as! InterestCollectionViewCell
         
-        cell.interest = self.interests[indexPath.item]
+        cell.interest = interests[indexPath.item]
         
         
         return cell

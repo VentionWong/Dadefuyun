@@ -42,18 +42,23 @@ class BombData: NSObject {
     func queryUserLingfu(username: String, LingfuID: String) {
         let query:BmobQuery = BmobQuery(className: "UserLingfu")
         query.order(byDescending: "createdAt")
-        query.whereKey(username, equalTo: "username")
-        query.whereKey(LingfuID, equalTo: "LingfuID")
-        //let gamescore:BmobObject = BmobObject(outDataWithClassName: "UserLingfu", objectId: objectId)
-        //query.getObjectInBackground(withId: objectId, block: <#T##BmobObjectResultBlock!##BmobObjectResultBlock!##(BmobObject?, Error?) -> Void#>)
+        query.whereKey("username", equalTo: username)
+        query.whereKey("LingfuID", equalTo: LingfuID)
         query.findObjectsInBackground { (array, error) in
             if let theCount = array?.count {
-                for i in 0..<theCount{
+                if array!.isEmpty {
                     
-                    let obj :BmobObject = (array![i] as? BmobObject)!
-                    print("object id \(obj.objectId)")
-                    
+                    print("UserLingfu不存在")
+                }else{
+                    for i in 0..<theCount{
+                        
+                        let obj :BmobObject = (array![i] as? BmobObject)!
+                        print("object id \(obj.objectId)")
+                        
+                    }
+                    print("UserLingfu已经存在")
                 }
+                
             }
         }
     }
